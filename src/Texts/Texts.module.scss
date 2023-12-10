@@ -1,0 +1,41 @@
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  .hidden {
+    opacity: 0;
+    pointer-events: none;
+    height: 20px;
+  }
+  .textsWrapper {
+    color: white;
+    width: 800px;
+    padding: 0 10px;
+    transition: opacity 0.5s, visibility 0.5s;
+    div {
+      padding: 15px 10px;
+      display: flex;
+      flex-direction: column;
+      border: 1px solid rgb(177, 177, 177);
+      border-radius: 10px;
+      margin-bottom: 10px;
+      p {
+        color: black;
+        background-color: transparent;
+        line-height: 20px;
+      }
+      p:first-child {
+        font-weight: 600;
+        color: #002367;
+      }
+      p:last-child {
+        padding-left: 10px;
+      }
+    }
+  }
+  .buttonsElement {
+    width: 100%;
+  }
+}

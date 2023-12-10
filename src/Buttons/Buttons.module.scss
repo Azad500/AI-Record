@@ -1,0 +1,23 @@
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 20px;
+  .buttonsWrapper {
+    button {
+      color: #fff;
+      text-align: center;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 600;
+      border-radius: 10px;
+      border: none;
+      background: #002367;
+      padding: 32px;
+      cursor: pointer;
+      &:nth-child(2) {
+        margin: 0 10px;
+      }
+    }
+  }
+}

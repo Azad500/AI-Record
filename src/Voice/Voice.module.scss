@@ -1,0 +1,58 @@
+.container {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .inputElement {
+    border: 2px dashed rgb(0, 0, 0, 0.25);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .hideElement {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      img {
+        margin-top: 20px;
+        width: 60px;
+        height: 60px;
+      }
+      p {
+        padding: 20px 80px;
+        padding-bottom: 0;
+        &:nth-child(2) {
+          font-size: 20px;
+          font-weight: bold;
+        }
+        &:nth-child(3) {
+          color: rgb(0, 0, 0, 0.25);
+          padding-bottom: 20px;
+        }
+      }
+    }
+    .choosedButton {
+      border: 1px solid green;
+      padding: 0;
+      margin-top: 20px;
+      padding: 10px 20px;
+      border-radius: 10px;
+      background-color: green;
+      color: white;
+      margin: 20px 80px;
+    }
+    .customFileUpload {
+      margin-bottom: 20px;
+      cursor: pointer;
+      border: 1px solid #002367;
+      color: #002367;
+      font-size: 16px;
+      border-radius: 5px;
+      padding: 10px 12px;
+    }
+  }
+  .audioElement {
+    padding-top: 50px;
+    padding-bottom: 30px;
+  }
+}

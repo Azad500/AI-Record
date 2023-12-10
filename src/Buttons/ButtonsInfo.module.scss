@@ -1,0 +1,13 @@
+.textsElement {
+  width: 50%;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  .automaticCRMTicketsElement,
+  .improvementSuggestionsElement,
+  .theCustomersPortraitElement {
+    border: 1px solid rgb(177, 177, 177);
+    border-radius: 10px;
+    padding: 10px;
+  }
+}
