@@ -1,14 +1,16 @@
 import styles from "./ButtonsInfo.module.scss";
 import AllinformationJs from "../informations";
+import Loading from "../Voice/Loading";
 
 export default function ButtonsInfo({
   visibleTickets,
   visibleSuggestions,
   visibleCustomer,
+  delayedInfoVisible,
 }) {
   return (
     <div className={styles.textsElement}>
-      {visibleTickets && (
+      {visibleTickets && delayedInfoVisible && (
         <div className={styles.automaticCRMTicketsElement}>
           <p>
             {
@@ -39,7 +41,7 @@ export default function ButtonsInfo({
           </p>
         </div>
       )}
-      {visibleSuggestions && (
+      {visibleSuggestions && delayedInfoVisible && (
         <div className={styles.improvementSuggestionsElement}>
           <p>
             {AllinformationJs.ButtonsTexts.ImprovementSuggestions.FirstText}
@@ -62,7 +64,7 @@ export default function ButtonsInfo({
           </p>
         </div>
       )}
-      {visibleCustomer && (
+      {visibleCustomer && delayedInfoVisible && (
         <div className={styles.theCustomersPortraitElement}>
           <p>{AllinformationJs.ButtonsTexts.TheCustomersPortrait.FirstText}</p>
           <br />

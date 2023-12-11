@@ -34,7 +34,9 @@ export default function App() {
   };
 
   const toggleButtonTickets = () => {
-    setVisibleTickets(!visibleTickets);
+    setTimeout(() => {
+      setVisibleTickets(!visibleTickets);
+    }, 2000);
     setVisibleSuggestions(false);
     setVisibleCustomer(false);
   };

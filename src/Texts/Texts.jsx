@@ -98,17 +98,17 @@ export default function Texts({
                             } else {
                               clearInterval(refs.intervalId6Ref.current);
                             }
-                          }, 40);
+                          }, 70);
                         }
-                      }, 40);
+                      }, 70);
                     }
-                  }, 40);
+                  }, 70);
                 }
-              }, 40);
+              }, 70);
             }
-          }, 40);
+          }, 100);
         }
-      }, 40);
+      }, 100);
 
       return () => {
         clearInterval(intervalId1);
